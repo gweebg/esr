@@ -1,0 +1,16 @@
+Questão 1:
+
+Capture três pequenas amostras de trágefo no link de saída do servidor, respetivamente com cliente (VLC), com 2 clientes (VLC e Firefox) e com 3 clientes (VLC, Firefox e ffplay). Identifique a taxa em bps necessária (usando o ffmpeg -i videoA.mp4 e/ou o próprio wireshark), o encapsulamento usado e o número total de fluxos gerados. Comente a escalabilidade da solução. Ilustre com evidências da realização prática do exercício (ex: capturas de ecrã).
+
+
+Q: Identifique a taxa em bps necessária (usando o ffmpeg -i videoA.mp4 e/ou o próprio wireshark). 
+
+Caraterísticas do videoA.mp4:
+- h254 encoded
+- 200x150
+- 20fps
+- bitrate 29kb/s
+
+Com a execução do comando `ffmpeg -i videoA.mp4` vemos que o bitrate indicado para o videoA é de 29kb/s, ou seja, 29000bps.
+
+
